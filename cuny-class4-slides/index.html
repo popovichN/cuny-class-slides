@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class='slides'>
+				<section id='welcome'>
+					<h2>Week 4 | Mapping data 1</h2>
+				</section>
+
+				<section>
+					<section  id='map-example-1'>
+						<h3>What does this map tell you?</h3>
+						<img width="80%" height="auto" data-src="img/bls-injury-map-no-key.png" alt="BLS workplace injury map" style='max-width: 100%;'/>
+					</section>
+					<section  id='map-example-2'>
+						<img width="80%" height="auto" data-src="img/bls-injury-map.png" alt="BLS workplace injury map" style='max-width: 100%;'/>
+					</section>
+				</section>
+
+				<section>
+					<section  id='map-population-states'>
+						<img width="80%" height="auto" data-src="img/state-pops.png" alt='Tweets about Ferguson'/>
+						<p><a href='https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population' target='_blank'>Source: Wikipedia</a></p>
+					</section>
+					<section  id='map-population-xkcd'>
+						<img width="600" height="auto" data-src="img/XKCD-maps.jpg" alt='XKCD take on data maps that are population maps'/>
+						<p><small><a href='http://xkcd.com/1138/' target='_blank'>Source: XKCD</a></small></p>
+					</section>
+					<section  id='map-population-tweets'>
+						<img width="80%" height="auto" data-src="img/ferguson-tweets.gif" alt='Tweets about Ferguson'/>
+						<p><a href='http://www.floatingsheep.org/2014/08/mapping-ferguson-tweets-or-more-maps.html' target='_blank'>Source: Floating Sheep</a></p>
+					</section>
+					<section  id='map-population-density'>
+						<img width="80%" height="auto" data-src="img/pop-density-map.png" alt="US population density map (2014)"/>
+						<p>Source: US Census</p>
+					</section>
+				</section>
+
+				<section id='normalize'>
+					<h3>Let's normalize: <a href='http://www.bls.gov/opub/btn/volume-2/death-on-the-job-fatal-work-injuries-in-2011.htm' target='_blank'>http://bit.ly/bls-map</a></h3>
+				</section>
+
+				<section id='break-1'>
+					<h3>BREAK!</h3>
+				</section>
+
+
+				<section>
+					<section id='types-of-maps'>
+						<h3>Basic map types</h3>
+
+						<div class='fragment'>&bull; categorical</div>
+						<div class='fragment'>&bull; choropleth</div>
+						<div class='fragment'>&bull; dot density</div>
+					</section>
+
+					<section id='categorical-map'>
+						<h3>Categorical map</h3>
+						<img width="550" height="auto" data-src="img/sports.jpg" alt='Categorical map from WSJ'/>
+						<p><a href='http://www.wsj.com/articles/which-sport-does-your-state-like-best-1414018126' target='_blank'>Source: Wall Street Journal</a></p>
+					</section>
+
+					<section id='choropleth-map'>
+						<h3>Choropleth map(s)</h3>
+						<img width="80%" height="auto" data-src="img/choropleth-weed.png" alt='Choropleth map'/>
+						<p><a href='http://www.washingtonpost.com/blogs/govbeat/wp/2014/01/06/how-much-does-marijuana-cost-in-the-u-s/' target='_blank'>Source: Washington Post</a></p>
+					</section>
+
+					<section id='choropleth-maps-2'>
+						<img width="700" height="auto" data-src="img/choropleth-comp.png" alt='Choropleth maps comapring total and per sq mile'/>
+						<p><a href='http://www.directionsmag.com/entry/choropleth-mapping-with-exploratory-data-analysis/123579' target='_blank'>Source: Directions Magazine</a></p>
+					</section>
+
+					<section id='dot-map'>
+						<h3>Dot density map</h3>
+						<img width="600" height="auto" data-src="img/dot-map-nyt.png" alt='Dot map from NYT'/>
+						<p><a href='http://projects.nytimes.com/census/2010/explorer?hp?hp' target='_blank'>Source: New York Times</a></p>
+					</section>
+
+					<section id='what-about-google'>
+						<h3>Now ubiquitous: pin map </h3>
+						<img width="500" height="auto" data-src="img/tacos.png" alt='Pin map?'/>
+						<p>Source: Yelp</p>
+					</section>
+				</section>
+
+				<section>
+					<section id='maps-color'>
+						<h3>Notes on using (and not abusing) color</h3>
+					</section>
+
+					<section id='rainbow-is-kind-of-crazy'>
+						<img width="80%" height="auto" data-src="img/rainbow-map.png" alt='Rainbow map'/>
+						<p><a href='https://eagereyes.org/basics/rainbow-color-map' target='_blank'>Source: Eager Eyes</a></p>
+					</section>
+
+					<section id='schemes'>
+						<img width="500" height="auto" data-src="img/scales1.png" alt='Color schemes'/>
+						<p><a href='https://www.mapbox.com/tilemill/docs/guides/tips-for-color/' target='_blank'>Source: Mapbox</a></p>
+					</section>
+
+					<section id='example-sequentials'>
+						<img width="80%" height="auto" data-src="img/hisp_choro.gif" alt='Hispanic choropleth'/>
+						<p>Source: Penn State</p>
+					</section>
+
+					<section id='example-diverging'>
+						<img width="80%" height="auto" data-src="img/purple_usa.gif" alt='Purple America map'/>
+						<p>Source: Princeton</p>
+					</section>
+
+					<section id='dot-map-color'>
+						<img width="80%" height="auto" data-src="img/vox.png" alt='Purple America map'/>
+						<p><a href='http://www.vox.com/a/infections-hospitals-map' target='_blank'>Source: VOX</a></p>
+					</section>
+				</section>
+
+				<section id='break-2'>
+					<h3>BREAK!</h3>
+				</section>
+
+				<section id='google-map-time'>
+					<h3>Make a map! </h3>
+					<p><a href='https://www.google.com/mymaps' target='_blank'>https://www.google.com/mymaps</a></p>
+					<p><a href='http://bit.ly/new-311-data' target='_blank'>http://bit.ly/new-311-data</a></p>
+				</section>				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

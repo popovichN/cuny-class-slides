@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class='slides'>
+				<section id='welcome'>
+					<h2>Week 5 | HTML and CSS 1</h2>
+				</section>
+
+				<section>
+					<section  id='html-ex-site-1'>
+						<h3>Behind the scenes of a web page … </h3>
+						<p><a href='http://popovichn.github.io/cuny-fundamentals-of-data/' target='_blank'>http://popovichn.github.io/cuny-fundamentals-of-data/</a></p>
+					</section>
+					<section  id='html-ex-site-2'>
+						<p><a href='http://www.theguardian.com/us' target='_blank'>http://www.theguardian.com/us</a></p>
+					</section>
+				</section>
+
+				<section>
+					<section id='html-set-up-1'>
+						<h3>Setting up a web page</h3>
+						<img width="100%" style='margin-left: 220px' height="auto" data-src="img/html.png" alt='HTML set-up'/>
+					</section>
+					<section id='html-set-up-2'>
+						<img width="100%" style='margin-left: 220px' height="auto" data-src="img/html3.png" alt='HTML set-up'/>
+					</section>
+					<section id='html-set-up-3'>
+						<img width="100%" style='margin-left: 220px' height="auto" data-src="img/html2.png" alt='HTML set-up'/>
+					</section>
+				</section>
+
+				<section id='head-v-body'>
+					<h3>Head v body</h3>
+					<p class='fragment'>&bull;  The <b>head</b> is where you put information about your HTML file, like its title. (Stuff that won't appear on the page.)</p>
+					<p class='fragment'>&bull; The <b>body</b> is where you put your content, such as text, images, and links. (For human eyes!) </p>
+				</section>
+					
+				<section id='tags-etc'>
+					<h3>Basic structure: writing HTML</h3>
+
+					<div class='fragment'>&bull; Elements</div>
+					<div class='fragment'>&bull; Tags</div>
+					<div class='fragment'>&bull; Attributes</div>
+				</section>
+			
+				<section>
+					<section id='element'>
+						<h3>Element</h3>
+						<img width="100%" style='margin-left:220px' height="auto" data-src="img/element.png" alt='HTML element'/>
+					</section>
+					<section id='tag'>
+						<h3>Tag</h3>
+						<img width="100%" style='margin-left:220px' height="auto" data-src="img/tag.png" alt='HTML tag'/>
+					</section>
+					<section id='attribute'>
+						<h3>Attribute</h3>
+						<img width="100%" style='margin-left:220px' height="auto" data-src="img/attribute.png" alt='HTML attribute'/>
+					</section>
+				</section>
+
+				<section>
+					<section id='header-tags-1'>
+						<h3>Header tags</h3>
+						<img width="100%" style='margin-left:300px' height="auto" data-src="img/h-tags.png" alt='h-tags'/>
+					</section>
+					<section id='header-tags-2'>
+						<h1>This is heading 1</h1>
+						<h2>This is heading 2</h2>
+						<h3>This is heading 3</h3>
+						<h4>This is heading 4</h4>
+						<h5 style='font-size:18px;'>This is heading 5</h5>
+						<h6 style='font-size:14px;'>This is heading 6</h6>
+					</section>
+				</section>
+
+				<section>
+					<section id='html-text-formatting'>
+						<h3>HTML text formatting</h3>
+					</section>
+					<section id='bold-me'>
+						<h3>Bold</h3>
+						<img width="100%" style='margin-left:300px' height="auto" data-src="img/strong.png" alt='Bols'/>
+					</section>
+					<section id='italics-me'>
+						<h3>Italics</h3>
+						<img width="100%" style='margin-left:330px' height="auto" data-src="img/em.png" alt='Italics'/>
+					</section>
+				</section>
+
+				<section>
+					<section id='add-links-1'>
+						<h3>Adding links</h3>
+						<img width="100%" style='margin-left:200px' height="auto" data-src="img/links1.png" alt='A href'/>
+					</section>
+					<section id='add-links-2'>
+						<h3>Link opens in a new tab </h3>
+						<img width="100%" style='margin-left:70px' height="auto" data-src="img/links2.png" alt='Taregt blank'/>
+					</section>
+					<section id='show-links'>
+						<p><a href ="http://placekitten.com/" target="_blank">Link me!</a></p>
+					</section>
+				</section>
+
+				<section>
+					<section id='add-images'>
+						<h3>Adding images</h3>
+						<img width="100%" style='margin-left:300px' height="auto" data-src="img/image.png" alt='Cute kitten!'/>
+					</section>
+					<section id='show-images'>
+						<img width="100%" height="auto" data-src="img/kitten.jpeg" alt='A very cute kitten!'/>
+					</section>
+					<section id='image-attributes-1'>
+						<h3>Image attributes</h3>
+							<p class='fragment'>&bull; src</p>
+							<p class='fragment'>&bull; alt </p>
+							<p class='fragment'>&bull; width</p>
+							<p class='fragment'>&bull; height</p>
+					</section>
+					<section id='image-attributes-2'>
+						<img width="100%" height="auto" data-src="img/img2.png" alt='Cute kitten attributes'/>
+					</section>
+				</section>
+
+				<section>
+					<section id='lists'>
+						<h3>Lists</h3>
+					</section>
+					<section id='list-example-1'>
+						<h3>Ordered lists</h3>
+						<img width="100%" style='margin-left:300px' height="auto" data-src="img/list2.png" alt='List example'/>
+					</section>
+					<section id='list-example-2'>
+						<ol>
+						   <li>Thing to remember</li>
+						   <li>Another thing to remember</li>
+						   <li>One more thing to remember</li>
+						</ol>
+					</section>
+					<section id='list-example-3'>
+						<h3>Unordered lists</h3>
+						<img width="100%" style='margin-left:300px' height="auto" data-src="img/list1.png" alt='List example'/>
+					</section>
+					<section id='list-example-4'>
+						<ul>
+						   <li>Thing to remember</li>
+						   <li>Another thing to remember</li>
+						   <li>One more thing to remember</li>
+						</ul>
+					</section>
+				</section>
+				<section id='break-1'>
+					<h3>BREAK!</h3>
+				</section>
+				<section id='css'>
+					<h3>CSS</h3>
+					<p>Let's get styling</p>
+				</section>
+				<section>
+					<section id='css-intro'>
+						<p><b style='text-decoration: underline;'>C</b>ascading  <b style='text-decoration: underline;'>S</b>tyle  <b style='text-decoration: underline;'>S</b>heets</p>
+					</section>
+					<section id='parent-child'>
+						<img width="100%" style='margin-left:300px' height="auto" data-src="img/parent-child.png" alt='Parent-child relationship'/>
+					</section>
+				</section>
+				<section>
+					<section id='inline-styles'>
+						<h3>Styles can be <span style='text-decoration: underline'>inline</span></h3>
+					</section>
+					<section id='inline-ex-1'>
+						<img width="100%" style='margin-left:75px' height="auto" data-src="img/red-text.png" alt='Red text example'/>
+					</section>
+					<section id='inline-ex-2'>
+						<div class="myDiv" style="color:red;">This text is red.</div>
+					</section>
+					<section id='header-styles'>
+						<h3>Or styles can be written in the <span style='text-decoration: underline'>HTML header</span></h3>
+					</section>
+					<section id='internal-ex-1'>
+						<img width="100%" style='margin-left:325px' height="auto" data-src="img/internal-css.png" alt='Header CSS'/>
+					</section>
+					<section id='internal-ex-2'>
+						<div class="myDiv" style="color:red;">This text is red.</div>
+					</section>
+				</section>
+				<section>
+					<section id='selectors-intro'>
+						<h3>Selectors:</h3>
+						<p class='fragment'>&bull; id</p>
+						<p class='fragment'>&bull; class</p>
+						<p class='fragment'>&bull; element: div, a, span</p>
+						<p class='fragment'>&bull; element state: a:active, a:hover, a:visited</p>
+					</section>
+					<section id='selectors-1'>
+						<img width="100%" style='margin-left:300px' height="auto" data-src="img/id-class.png" alt='id and class selectors'/>
+					</section>
+					<section id='selectors-2'>
+						<img width="100%" style='margin-left:300px' height="auto" data-src="img/a-hover.png" alt='a and a:hover selectors'/>
+					</section>
+				</section>
+				<section>
+					<section id='css-control'>
+						<h3>What you can control though CSS</h3>
+						<p>The basics</p>
+					</section>
+					<section id='text-styles'>
+						<h3>Text styles</h3>
+						<p class='fragment'>&bull; color</p>
+						<p class='fragment'>&bull; font-family</p>
+						<p class='fragment'>&bull; font-size</p>
+						<p class='fragment'>&bull; font-weight</p>
+						<p class='fragment'>&bull; text-align</p>
+						<p class='fragment'>&bull; text-decoration</p>
+					</section>
+					<section id='box-model'>
+						<h3>"The box model"</h3>
+						<p class='fragment'>&bull; width</p>
+						<p class='fragment'>&bull; height</p>
+						<p class='fragment'>&bull; border</p>
+						<p class='fragment'>&bull; margin</p>
+						<p class='fragment'>&bull; padding</p>
+					</section>
+					<section id='positioning-display'>
+						<h3>Positioning and display</h3>
+						<p class='fragment'>&bull; position</p>
+						<p class='fragment'>&bull; display</p>
+						<p class='fragment'>&bull; float</p>
+					</section>
+					<section id='other-css'>
+						<h3>Other</h3>
+						<p class='fragment'><a href='http://www.w3schools.com/cssref/tryit.asp?filename=trycss_list-style-type_ex' target='_blank'>&bull; list-style-type</a></p>
+					</section>
+				</section>
+				<section>
+					<section id='span-ex'>
+						<h3>Span tags</h3>
+						<img width="100%"  height="auto" data-src="img/span.png" alt='Span tag example'/>
+					</section>
+					<section id='span-show'>
+						<p style="color:blue;">The sky is <span style="color:red;">blue</span></p>
+					</section>
+				</section>
+				<section id='break-2'>
+					<p>BREAK!</p>
+				</section>
+				<section id='exercises'>
+					<h3>In-class exercises</h3>
+					<p><a href='http://bit.ly/html-css-exercises' target='_blank'>bit.ly/html-css-exercises</a></p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
