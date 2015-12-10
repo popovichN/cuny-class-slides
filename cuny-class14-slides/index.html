@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class='slides'>
+				<section id='welcome'>
+					<h2>Week 14 | Review </h2>
+				</section>
+
+				<section>
+					<section id='what-is-js'>
+						<h3>What is JavaScript?</h3>
+					</section>
+					<section id='html'>
+						<h3>HTML = scaffolding</h3>
+						<p>(Bones / building blocks)</p>
+						<img/ >
+					</section>
+					<section id='css'>
+						<h3>CSS = facade </h3>
+						<p>(Paint / design / what the world sees)</p>
+						<img />
+					</section>
+					<section id='js'>
+						<h3>Javscript = wiring / plumbing </h3>
+						<p>(What makes interactivity work!)</p>
+						<img / >
+					</section>
+					<section id='js'> 
+						<h3>Or, in other words …</h3>
+						<img class='fragment' alt='Wierd Al!' width='700px' src='img/wierd-al.gif'/ >
+					</section>
+				</section>
+
+				<section id='what=is-js-2'>
+					<h3>HTML !== programming </h3>
+					<p>HTML is a <em>markup</em> language, not a programming language.</p>
+					<p>A <em>programming</em> language has logic and makes decisions based on that logic</p>
+				</section>
+
+				<section>
+					<section id='js-example-1'>
+						<img width="700px" height="auto" data-src="img/congress.png" alt='Congress example'/>
+						<p>Via <a href='http://www.theguardian.com/us-news/ng-interactive/2014/nov/06/-sp-congress-diversity-women-race-lgbt-are-you-represented' target='_blank'>Guardian</a></p>
+					</section>
+					<section id='js-example-2'>
+						<img width="100%" height="auto" data-src="img/limbs.png" alt='Workers comp example'/>
+						<p>Via <a href='https://projects.propublica.org/graphics/workers-compensation-benefits-by-limb' target='_blank'>ProPublica</a></p>
+					</section>
+					<section id='js-example-4'>
+						<img width="100%" height="auto" data-src="img/haiti.png" alt='Haiti example'/>
+						<p>Via <a href='http://apps.rue89.com/haiti/en/' target='_blank'>Rue 89</a></p>
+					</section>
+					<section id='js-example-4'>
+						<img width="100%" height="auto" data-src="img/tennis_line_judge.png" alt='Tennis example'/>
+						<p>Via <a href='http://graphics.wsj.com/are-you-good-enough-to-be-a-tennis-line-judge/' target='_blank'>Wall Street Journal</a></p>
+					</section>
+					<section id='js-example-4'>
+						<img width="100%" height="auto" data-src="img/counted.png" alt='Counted example'/>
+						<p>Via <a href='www.theguardian.com/us-news/ng-interactive/2015/jun/01/the-counted-police-killings-us-database#' target='_blank'>Guardian</a></p>
+					</section>
+						<section id='js-example-3'>
+						<img width="100%" height="auto" data-src="img/nyt-chart.gif" alt='Drought example'/>
+						<p>Via <a href='http://www.nytimes.com/interactive/2015/10/30/sports/new-york-marathon-in-six-charts.html' target='_blank'>NY Times</a></p>
+					</section>
+				</section>
+				<section>
+					<section id='when-to-visualize-1'>
+						<h3>When to use interactivity: </h3>
+						<p class='fragment'>&bull; to allow users to explore the data (ex. hover)</p>
+						<p class='fragment'>&bull; to show multiple views of the data</p>
+						<p class='fragment'>&bull; to better explain a concept (ex. through animation)</p>
+						<p class='fragment'>&bull; when user input helps to better understand the story</p>
+					</section>
+					<section id='when-to-visualize-2'>
+						<p>Bottom line:</p> 
+						<p class='fragment'>&bull; use interactivity to make your page or graphic more engaging</p>
+						<p class='fragment'>&bull; use it to help the reader understand the story better  </p>
+					</section>
+					<section id='when-not-to-visualize'>
+						<h3>When NOT to use interactivity: </h3>
+						<p class='fragment'>&bull; when it adds confucion rather than clarity</p>
+						<p class='fragment'>&bull; when it's cool, but doesn't add anything to the reader's understanding</p>
+						<p class='fragment'>&bull; when it leads to information overload</p>
+						<p class='fragment'>&bull; when user input doesn't give a new/better experience</p>
+					</section>
+				</section>
+				<section>
+					<section id='programming-basics'>
+						<h3>So what is programming?</h3>
+						<p class='fragment'>Giving the computer a set of instructions to do something</p>
+					</section>
+					<section id='js-basics'>
+						<h3>JavaScript = programming language</h3>
+						<p class='fragment'>A common set of instuctions that both the computer and you can understand</p>
+					</section>
+					<section id='js-ex-1'>
+						<p class='fragment'>"Computer, <span style='color: #ff5b3a;'>draw a line.</span>"</p>
+						<p class='fragment'>"Computer, <span style='color: #ff5b3a;'>hide this box when I click.</span>"</p>
+						<p class='fragment'>"Now, <span style='color: #ff5b3a;'>make the box red</span>. And <span style='color: #ff5b3a;'>make it bigger.</span>"</p>
+					</section>
+
+				</section>
+				<section id='encouragement'>
+					<p>"The amazing thing about Javascript is that it is possible to get work done with it without knowing much about the language, or even knowing much about programming."</p> 
+					<h4>– Douglas Crockford, author of JavaScript: The Good Parts</h4>
+				</section>
+				<section>
+					<p>Though… "It is even better when you know what you’re doing."</p>
+				</section>
+
+				<section id='today'>
+					<h3>Today we'll cover how to:</h3>
+					<p class='fragment'>&bull; show/hide elements</p>
+					<p class='fragment'>&bull; change colors</p>
+					<p class='fragment'>&bull; swap out text</p>
+					<p class='fragment'>&bull; perform different actions based on different conditions</p>
+					<p class='fragment'>&bull; make some calculations </p>
+				</section>
+				<section id='open-your-console'>
+					<p>To begin, let's open our broswer consoles … </p>
+					<p class='fragment'> … and alert the world that we're learning JavaScript!</p>
+				</section>
+				<section id='show-hide'>
+					<h3>1. How to hide elements with JavaScript</h3>
+				</section>
+				<section id='function'>
+					<h3>Function</h3> 
+					<p class='fragment'>A block of code that tells the computer to execute a particular task</p>
+				</section>
+				<section id='function-ex'>
+					<p style='color:#ff5b3a; text-align: left; margin-left: 300px;'>
+						function doSomething ( ) {
+						<br><br>
+							<span style='color: #ccc;'>// write code here!
+							</span>
+						<br><br>
+					}</p>
+				</section>
+				<section id='change-colors'>
+					<h3>2. How to change colors and other styles</h3>
+				</section>
+				<section id='change-text'>
+					<h3>3. How to swap out text</h3>
+				</section>
+
+				<section id='kitten-break'>
+					<img src='img/kitten-break.jpg' width='90%' alt='Kitten break!'>
+				</section>
+			
+				<section id='conditional-statements'>
+					<h3>4. How to make conditional statements (if/else)</h3>
+				</section>
+				<section id='variables'>
+					<h3>Variables</h3> 
+					<p class='fragment'>Containers for storing data values</p>
+					<p class='fragment' style='color:#ff5b3a;'>var name = "Nadja";</p>
+				</section> 
+				<section id='types'>
+					<h3>Data types</h3> 
+					<p class='fragment'>&bull; Numbers (1, 2, 3.14, 100000, etc.)</p>
+					<p class='fragment' style='color:#ff5b3a;'>var num = 3.14;</p>
+					<p class='fragment'>&bull; Strings ("Nadja", "I love my pet cat, Wally.", etc.)</p>
+					<p class='fragment' style='color:#ff5b3a;'>var sentence = "I love my pet cat, Wally.";</p>
+					<p class='fragment'>&bull; Boolean values (True, False)</p>
+					<p class='fragment' style='color:#ff5b3a;'>var isCUNYinstructor = true;</p>
+				</section> 
+
+				<section id='calculations'>
+					<h3>5. How to calculate!</h3>
+				</section>
+				
+				<section id='some-calcs'>
+					<h3>Comparison operators:</h3>
+					<img src='img/ops.png' style='width:600px'/>
+				</section>				
+				
+				<section id='BREAK'>
+					<h3>BREAK!</h3>
+				</section>
+
+				<section id='exercises'>
+					<h3>Today's exercises:</h3>
+					<p><a href='http://bit.ly/js-exercises' target='_blank'>http://bit.ly/js-exercises</a></p>
+				</section>
+
+
+				<!-- tk tk -->	
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
